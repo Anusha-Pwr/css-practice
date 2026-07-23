@@ -19,3 +19,24 @@ flex-basis = starting main-axis size in Flexbox
 If flex-basis is auto, Flexbox consults width. <br>
 If flex-basis has a value, it takes priority for flex sizing.
 
+# align-items:
+
+align-items default = stretch
+
+stretch only stretches flex items whose cross-size is auto.
+
+If height is set in row flex, stretch will not override it. <br>
+If width is set in column flex, stretch will not override it.
+
+# align-content:
+
+Multiple flex lines + fixed container height <br>
+→ align-content becomes important.
+
+Default align-content: stretch <br>
+→ stretches the line boxes.
+
+Fixed-height items <br>
+→ do not stretch with the line boxes.
+
+demo: https://codepen.io/csspractice/pen/jEyZRQd
