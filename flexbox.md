@@ -40,3 +40,24 @@ Fixed-height items <br>
 → do not stretch with the line boxes.
 
 demo: https://codepen.io/csspractice/pen/jEyZRQd
+
+# flex-wrap:
+
+With flex-wrap: wrap:
+
+Items start from their flex-basis.
+If flex-basis:auto and no width is set,
+that starting size is content-based, often similar to max-content.
+
+But they are not guaranteed to stay max-content.
+They can shrink because flex-shrink:1.
+They overflow only after they cannot shrink further.
+
+nowrap → try to fit all items in one line by shrinking them
+
+wrap → use starting sizes to form multiple lines,
+       then flex/shrink items within each line
+
+The flex sizing process:  Demo: https://codepen.io/csspractice/pen/OPWvyNP
+                                https://codepen.io/csspractice/pen/MYJVwaW
+
