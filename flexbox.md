@@ -61,3 +61,29 @@ wrap → use starting sizes to form multiple lines,
 The flex sizing process:  Demo: https://codepen.io/csspractice/pen/OPWvyNP
                                 https://codepen.io/csspractice/pen/MYJVwaW
 
+Simplified algorithm:
+
+1. Give every item a starting size from flex-basis.
+
+2. Add all item sizes + gaps.
+
+3. Compare with container size.
+
+4. If there is extra space:
+   flex-grow distributes it.
+
+5. If there is not enough space:
+   flex-shrink reduces item sizes.
+
+6. min-width, max-width, min-height, max-height can limit the final size.
+
+flex-basis: auto; // means use width/height if provided <br>
+                  // otherwise use content-based size 
+```CSS
+.item {
+  width: 300px;
+  flex-basis: 200px; /* starting size will be 200px */
+}
+```
+
+flex: grow shrink basis;
