@@ -28,6 +28,13 @@ auto does not mean the text cannot wrap, it is NOT like max-content.
 
 Demo: https://codepen.io/csspractice/pen/BypxRxG
 
+# justify-content: normal
+
+100px 100px → fixed tracks, no stretching <br>
+1fr 1fr    → flexible tracks, divide leftover space <br>
+auto auto  → content-sized tracks, but can stretch by default
+
+
 
 
 
