@@ -34,6 +34,21 @@ Demo: https://codepen.io/csspractice/pen/BypxRxG
 1fr 1fr    → flexible tracks, divide leftover space <br>
 auto auto  → content-sized tracks, but can stretch by default
 
+# Implicit grid
+
+Explicit grid: <br>
+Rows/columns you define using grid-template-columns and grid-template-rows.
+
+Implicit grid: <br>
+Extra rows/columns Grid creates automatically when items do not fit inside the explicit grid.
+
+grid-auto-rows: <br>
+Controls height of automatically created rows.
+
+grid-auto-columns: <br>
+Controls width of automatically created columns.
+
+Demo: https://codepen.io/csspractice/pen/PwWeeWG
 
 
 
